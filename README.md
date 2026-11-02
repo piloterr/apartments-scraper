@@ -69,7 +69,7 @@ response = requests.get(
     params={
         "query": "https://www.apartments.com/141-e-33rd-st-new-york-ny-unit-si-fl16-id43/p6b4mes/",
     },
-    timeout=60,
+    timeout=120,
 )
 response.raise_for_status()
 data = response.json()
@@ -207,7 +207,7 @@ response = requests.get(
     params={
         "query": "https://www.apartments.com/new-york-ny/3",
     },
-    timeout=60,
+    timeout=120,
 )
 response.raise_for_status()
 data = response.json()
