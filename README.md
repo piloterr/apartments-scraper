@@ -93,7 +93,7 @@ type ApartmentsProperty = {
   bedrooms?: string;
   amenities?: string[];
   bathrooms?: string;
-  rent_range?: unknown;
+  rent_range?: string;
   description?: string;
   geolocation?: {
     latitude?: number;
@@ -138,7 +138,7 @@ Example response from the API reference, abridged — real values depend on the 
   "url": "https://www.apartments.com/141-e-33rd-st-new-york-ny-unit-si-fl16-id43/p6b4mes/",
   "image": "https://images1.apartments.com/i2/SF9HSqkGqXN0cjmR2cUNbgLuxyXklZLpKYtInYim0XI/111/141-e-33rd-st-unit-si-fl16-id43-new-york-ny-primary-pho…",
   "phone": "example",
-  "title": "$7,210",
+  "title": "141 E 33rd St Unit SI FL16-ID43",
   "units": [],
   "images": [
     "https://images1.apartments.com/i2/SF9HSqkGqXN0cjmR2cUNbgLuxyXklZLpKYtInYim0XI/111/141-e-33rd-st-unit-si-fl16-id43-new-york-ny-primary-pho…",
@@ -151,7 +151,7 @@ Example response from the API reference, abridged — real values depend on the 
     "Air Conditioning"
   ],
   "bathrooms": "1.5",
-  "rent_range": null,
+  "rent_range": "$7,210",
   "description": "141 E 33rd St Unit SI FL16-ID43\n\n1 - 12 Month Lease , Available Aug 9\n\nFeel at home wherever you choose to live with Blueground. You’ll l…",
   "geolocation": {
     "latitude": 40.74576,
@@ -176,7 +176,7 @@ Example response from the API reference, abridged — real values depend on the 
 | `bedrooms` | string |  |
 | `amenities` | string[] |  |
 | `bathrooms` | string |  |
-| `rent_range` | object |  |
+| `rent_range` | string |  |
 | `description` | string |  |
 | `geolocation` | object |  |
 | `geolocation.latitude` | number |  |
@@ -423,10 +423,10 @@ Use Piloterr from your own language with a typed client:
 
 - [Argenprop Scraper API](https://github.com/piloterr/argenprop-scraper)
 - [Centris Scraper API](https://github.com/piloterr/centris-scraper)
+- [Domain.com.au Scraper API](https://github.com/piloterr/domaincomau-scraper)
 - [Fotocasa Scraper API](https://github.com/piloterr/fotocasa-scraper)
 - [Funda Scraper API](https://github.com/piloterr/funda-scraper)
 - [Homestra Scraper API](https://github.com/piloterr/homestra-scraper)
-- [Idealista Scraper API](https://github.com/piloterr/idealista-scraper)
 - [All Piloterr scrapers on GitHub](https://github.com/piloterr)
 
 ## Support
